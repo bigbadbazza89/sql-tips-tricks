@@ -9,3 +9,14 @@ There are different "types" of databases. All use SQL but have slight difference
 **Oracle** - this is generally a physical server somewhere locally
 **Postgres** - this is used more by the systems "in the cloud"
 
+## Row IDs
+Every  "Row ID" is specific to a table as a primary key.  This means, every row in that table has it's own unique row id.   From here that row id is used to link that line into other tables.
+eg. You have 3 tables
+```
+CUSTOMER
+ITEM
+PURCHASE
+```
+Each customer will have a unique row id. Each Item will have a unique id. To when a customer makes a purchase, a new row will be inserted in to the purchase table, which again would get it's own row id.
+
+So we can link each purchase to both the item and the customer, there would be columns for customer_id and item_id within the purchase table.
