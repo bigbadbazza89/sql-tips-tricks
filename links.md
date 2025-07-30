@@ -1,2 +1,2 @@
 # Some useful links for SQL
-(https://www.sqlstyle.guide/)[SQL Style Guide]
+https://www.sqlstyle.guide/ - SQL Style Guide
