@@ -20,3 +20,8 @@ PURCHASE
 Each customer will have a unique row id. Each Item will have a unique id. To when a customer makes a purchase, a new row will be inserted in to the purchase table, which again would get it's own row id.
 
 So we can link each purchase to both the item and the customer, there would be columns for customer_id and item_id within the purchase table.
+
+
+## Common Errors when writing SQL's
+- Error states "FROM keyword not found were expected". In this case it is because a comma should be between column names in SELECT.
+- Error states missing right parenthesis is the case it is because is missing the closing bracket.
